@@ -53,7 +53,7 @@ jobs:
 
       - name: Build image
         run: |
-          docker pull lambci/lambda:build-provided.al2
+          docker pull $BASE_IMAGE
           
           # Replace base image with a custom one          
           docker tag $BASE_IMAGE lambci/lambda:build-provided.al2
