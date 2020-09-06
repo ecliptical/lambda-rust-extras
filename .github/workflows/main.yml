@@ -48,7 +48,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          repository: soft-props/lambda-rust
+          repository: softprops/lambda-rust
           ref: ${{ github.ref }}
 
       - name: Build image
